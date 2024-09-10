@@ -1,0 +1,287 @@
+[debug] [2024-09-09T01:00:48.248Z] ----------------------------------------------------------------------
+[debug] [2024-09-09T01:00:48.250Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\andra\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2024-09-09T01:00:48.251Z] CLI Version:   13.16.0
+[debug] [2024-09-09T01:00:48.251Z] Platform:      win32
+[debug] [2024-09-09T01:00:48.251Z] Node Version:  v20.16.0
+[debug] [2024-09-09T01:00:48.251Z] Time:          Sun Sep 08 2024 22:00:48 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2024-09-09T01:00:48.251Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-09T01:00:48.256Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-09T01:00:48.256Z] > authorizing via signed-in user (andradeovictor@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\andra\colega-plus
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-09-09T01:01:12.871Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2024-09-09T01:01:13.608Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2024-09-09T01:01:13.609Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project simposio-a97e5 (SIMPOSIO) 
+[info] 
+=== Hosting Setup
+[debug] [2024-09-09T01:01:20.544Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/simposio-a97e5 [none]
+[debug] [2024-09-09T01:01:20.999Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/simposio-a97e5 200
+[debug] [2024-09-09T01:01:20.999Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/simposio-a97e5 {"projectId":"simposio-a97e5","projectNumber":"721166303549","displayName":"SIMPOSIO","name":"projects/simposio-a97e5","resources":{"hostingSite":"simposio-a97e5"},"state":"ACTIVE","etag":"1_adc3282b-b361-4d16-ae61-f405b87ed334"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-09-09T01:01:55.672Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-09-09T01:01:55.896Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-09-09T01:01:55.896Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"10.13.1","browserURL":"https://www.gstatic.com/firebasejs/10.13.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/10.13.1/firebase.tgz"},"live":{"version":"10.13","browserURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/10.13/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/10.13.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/10.13.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/10.13.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/10.13.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/10.13.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/10.13.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/10.13.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/10.13.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/10.13.1/firebase-database.js","vertexai-preview":"https://www.gstatic.com/firebasejs/10.13.1/firebase-vertexai-preview.js","firestore.memory":"https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore.memory.js"}}
+[info] +  Wrote Y/index.html 
+[info] 
+[info] i  Didn't detect a .git folder. Assuming C:\Users\andra\colega-plus is the project root. 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=393863544&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2024-09-09T01:02:49.083Z] >>> [apiv2][query] POST https://github.com/login/oauth/access_token [none]
+[debug] [2024-09-09T01:02:49.083Z] >>> [apiv2][body] POST https://github.com/login/oauth/access_token [stream]
+[debug] [2024-09-09T01:02:49.535Z] <<< [apiv2][status] POST https://github.com/login/oauth/access_token 200
+[debug] [2024-09-09T01:02:49.535Z] <<< [apiv2][body] POST https://github.com/login/oauth/access_token {"access_token":"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","token_type":"bearer","scope":"read:user,repo"}
+[debug] [2024-09-09T01:02:49.538Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2024-09-09T01:02:50.057Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2024-09-09T01:02:50.057Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"Victor-AndradeZ","id":180051575,"node_id":"U_kgDOCrtedw","avatar_url":"https://avatars.githubusercontent.com/u/180051575?v=4","gravatar_id":"","url":"https://api.github.com/users/Victor-AndradeZ","html_url":"https://github.com/Victor-AndradeZ","followers_url":"https://api.github.com/users/Victor-AndradeZ/followers","following_url":"https://api.github.com/users/Victor-AndradeZ/following{/other_user}","gists_url":"https://api.github.com/users/Victor-AndradeZ/gists{/gist_id}","starred_url":"https://api.github.com/users/Victor-AndradeZ/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Victor-AndradeZ/subscriptions","organizations_url":"https://api.github.com/users/Victor-AndradeZ/orgs","repos_url":"https://api.github.com/users/Victor-AndradeZ/repos","events_url":"https://api.github.com/users/Victor-AndradeZ/events{/privacy}","received_events_url":"https://api.github.com/users/Victor-AndradeZ/received_events","type":"User","site_admin":false,"name":null,"company":null,"blog":"","location":null,"email":null,"hireable":null,"bio":null,"twitter_username":null,"notification_email":null,"public_repos":1,"public_gists":0,"followers":0,"following":0,"created_at":"2024-08-31T20:28:39Z","updated_at":"2024-08-31T20:29:03Z","private_gists":0,"total_private_repos":0,"owned_private_repos":0,"disk_usage":0,"collaborators":0,"two_factor_authentication":false,"plan":{"name":"free","space":976562499,"collaborators":0,"private_repos":10000}}
+[info] 
+[info] +  Success! Logged into GitHub as Victor-AndradeZ 
+[info] 
+[debug] [2024-09-09T01:03:55.250Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:03:55.637Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-09-09T01:03:55.637Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:04:06.407Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:04:06.780Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2024-09-09T01:04:06.780Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:08.221Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:08.610Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:08.610Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:08.661Z] >>> [apiv2][query] GET https://api.github.com/repos/user/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:08.943Z] <<< [apiv2][status] GET https://api.github.com/repos/user/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:08.943Z] <<< [apiv2][body] GET https://api.github.com/repos/user/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:19.299Z] >>> [apiv2][query] GET https://api.github.com/repos/usery/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:19.663Z] <<< [apiv2][status] GET https://api.github.com/repos/usery/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:19.663Z] <<< [apiv2][body] GET https://api.github.com/repos/usery/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:20.548Z] >>> [apiv2][query] GET https://api.github.com/repos/usery/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:20.810Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:20.841Z] <<< [apiv2][status] GET https://api.github.com/repos/usery/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:20.841Z] <<< [apiv2][body] GET https://api.github.com/repos/usery/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:20.951Z] >>> [apiv2][query] GET https://api.github.com/repos/usery/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:21.165Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:21.165Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:21.222Z] <<< [apiv2][status] GET https://api.github.com/repos/usery/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:21.222Z] <<< [apiv2][body] GET https://api.github.com/repos/usery/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:23.076Z] >>> [apiv2][query] GET https://api.github.com/repos/y/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:23.349Z] <<< [apiv2][status] GET https://api.github.com/repos/y/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:23.350Z] <<< [apiv2][body] GET https://api.github.com/repos/y/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:08:59.284Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:08:59.650Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2024-09-09T01:08:59.650Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:09:02.527Z] >>> [apiv2][query] GET https://api.github.com/repos/repository/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:09:02.814Z] <<< [apiv2][status] GET https://api.github.com/repos/repository/actions/secrets/public-key 404
+[debug] [2024-09-09T01:09:02.814Z] <<< [apiv2][body] GET https://api.github.com/repos/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:16.562Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:16.922Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:16.922Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:17.891Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:18.160Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:18.160Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:18.631Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:18.894Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:18.894Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:19.111Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:19.394Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:19.394Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:29.777Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:30.144Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:30.144Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:31.359Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:31.648Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:31.648Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:10:32.179Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:10:32.455Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key 404
+[debug] [2024-09-09T01:10:32.455Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/repository/actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest/actions/secrets#get-a-repository-public-key","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:12:09.002Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:12:09.384Z] >>> [apiv2][query] GET https://api.github.com/repos//actions/secrets/public-key type=owner
+[debug] [2024-09-09T01:12:09.414Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/public-key 200
+[debug] [2024-09-09T01:12:09.414Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/public-key {"key_id":"3380204578043523366","key":"L88r/unzv54rECSeC2jVh8LlTbyYUl35DRM5WYLN/kk="}
+[debug] [2024-09-09T01:12:09.415Z] >>> [apiv2][query] GET https://api.github.com/repos/Victor-AndradeZ/site-Simposio [none]
+[debug] [2024-09-09T01:12:09.742Z] <<< [apiv2][status] GET https://api.github.com/repos//actions/secrets/public-key 404
+[debug] [2024-09-09T01:12:09.743Z] <<< [apiv2][body] GET https://api.github.com/repos//actions/secrets/public-key {"message":"Not Found","documentation_url":"https://docs.github.com/rest","status":"404"}
+[info] 
+[info] 
+[error] !  The provided authorization cannot be used with this repository. If this repository is in an organization, did you remember to grant access? 
+[info] 
+[info] i  Action required: Visit this URL to ensure access has been granted to the appropriate organization(s) for the Firebase CLI GitHub OAuth App: 
+[info] https://github.com/settings/connections/applications/89cf50f02ac6aaed3484
+[info] 
+[debug] [2024-09-09T01:12:09.773Z] <<< [apiv2][status] GET https://api.github.com/repos/Victor-AndradeZ/site-Simposio 200
+[debug] [2024-09-09T01:12:09.773Z] <<< [apiv2][body] GET https://api.github.com/repos/Victor-AndradeZ/site-Simposio {"id":850459327,"node_id":"R_kgDOMrD6vw","name":"site-simposio","full_name":"Victor-AndradeZ/site-simposio","private":false,"owner":{"login":"Victor-AndradeZ","id":180051575,"node_id":"U_kgDOCrtedw","avatar_url":"https://avatars.githubusercontent.com/u/180051575?v=4","gravatar_id":"","url":"https://api.github.com/users/Victor-AndradeZ","html_url":"https://github.com/Victor-AndradeZ","followers_url":"https://api.github.com/users/Victor-AndradeZ/followers","following_url":"https://api.github.com/users/Victor-AndradeZ/following{/other_user}","gists_url":"https://api.github.com/users/Victor-AndradeZ/gists{/gist_id}","starred_url":"https://api.github.com/users/Victor-AndradeZ/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/Victor-AndradeZ/subscriptions","organizations_url":"https://api.github.com/users/Victor-AndradeZ/orgs","repos_url":"https://api.github.com/users/Victor-AndradeZ/repos","events_url":"https://api.github.com/users/Victor-AndradeZ/events{/privacy}","received_events_url":"https://api.github.com/users/Victor-AndradeZ/received_events","type":"User","site_admin":false},"html_url":"https://github.com/Victor-AndradeZ/site-simposio","description":null,"fork":false,"url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio","forks_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/forks","keys_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/keys{/key_id}","collaborators_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/teams","hooks_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/hooks","issue_events_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/issues/events{/number}","events_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/events","assignees_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/assignees{/user}","branches_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/branches{/branch}","tags_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/tags","blobs_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/git/refs{/sha}","trees_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/git/trees{/sha}","statuses_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/statuses/{sha}","languages_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/languages","stargazers_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/stargazers","contributors_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/contributors","subscribers_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/subscribers","subscription_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/subscription","commits_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/commits{/sha}","git_commits_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/git/commits{/sha}","comments_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/comments{/number}","issue_comment_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/issues/comments{/number}","contents_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/contents/{+path}","compare_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/compare/{base}...{head}","merges_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/merges","archive_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/downloads","issues_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/issues{/number}","pulls_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/pulls{/number}","milestones_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/milestones{/number}","notifications_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/labels{/name}","releases_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/releases{/id}","deployments_url":"https://api.github.com/repos/Victor-AndradeZ/site-simposio/deployments","created_at":"2024-08-31T20:35:58Z","updated_at":"2024-08-31T20:36:02Z","pushed_at":"2024-08-31T20:35:58Z","git_url":"git://github.com/Victor-AndradeZ/site-simposio.git","ssh_url":"git@github.com:Victor-AndradeZ/site-simposio.git","clone_url":"https://github.com/Victor-AndradeZ/site-simposio.git","svn_url":"https://github.com/Victor-AndradeZ/site-simposio","homepage":null,"size":0,"stargazers_count":0,"watchers_count":0,"language":null,"has_issues":true,"has_projects":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"has_discussions":false,"forks_count":0,"mirror_url":null,"archived":false,"disabled":false,"open_issues_count":0,"license":null,"allow_forking":true,"is_template":false,"web_commit_signoff_required":false,"topics":[],"visibility":"public","forks":0,"open_issues":0,"watchers":0,"default_branch":"main","permissions":{"admin":true,"maintain":true,"push":true,"triage":true,"pull":true},"temp_clone_token":"","allow_squash_merge":true,"allow_merge_commit":true,"allow_rebase_merge":true,"allow_auto_merge":false,"delete_branch_on_merge":false,"allow_update_branch":false,"use_squash_pr_title_as_default":false,"squash_merge_commit_message":"COMMIT_MESSAGES","squash_merge_commit_title":"COMMIT_OR_PR_TITLE","merge_commit_message":"PR_TITLE","merge_commit_title":"MERGE_MESSAGE","security_and_analysis":{"secret_scanning":{"status":"enabled"},"secret_scanning_push_protection":{"status":"enabled"},"dependabot_security_updates":{"status":"disabled"},"secret_scanning_non_provider_patterns":{"status":"disabled"},"secret_scanning_validity_checks":{"status":"disabled"}},"network_count":0,"subscribers_count":1}
+[debug] [2024-09-09T01:12:09.774Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts [none]
+[debug] [2024-09-09T01:12:09.774Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts {"accountId":"github-action-850459327","serviceAccount":{"displayName":"GitHub Actions (Victor-AndradeZ/site-Simposio)","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository Victor-AndradeZ/site-Simposio"}}
+[debug] [2024-09-09T01:12:11.311Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts 200
+[debug] [2024-09-09T01:12:11.312Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts [omitted]
+[debug] [2024-09-09T01:12:11.312Z] >>> [apiv2][query] GET https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com [none]
+[debug] [2024-09-09T01:12:11.312Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:getIamPolicy [none]
+[debug] [2024-09-09T01:12:11.507Z] <<< [apiv2][status] GET https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com 200
+[debug] [2024-09-09T01:12:11.507Z] <<< [apiv2][body] GET https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com {"name":"projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com","projectId":"simposio-a97e5","uniqueId":"117063448886478001421","email":"github-action-850459327@simposio-a97e5.iam.gserviceaccount.com","displayName":"GitHub Actions (Victor-AndradeZ/site-Simposio)","etag":"MDEwMjE5MjA=","description":"A service account with permission to deploy to Firebase Hosting and Cloud Functions for the GitHub repository Victor-AndradeZ/site-Simposio","oauth2ClientId":"117063448886478001421"}
+[debug] [2024-09-09T01:12:12.277Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:getIamPolicy 200
+[debug] [2024-09-09T01:12:12.277Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:getIamPolicy {"version":1,"etag":"BwYhpUAFwVM=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-721166303549@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-47d39@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-47d39@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:andradeovictor@gmail.com"]}]}
+[debug] [2024-09-09T01:12:12.277Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:setIamPolicy [none]
+[debug] [2024-09-09T01:12:12.277Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:setIamPolicy {"policy":{"version":1,"etag":"BwYhpUAFwVM=","bindings":[{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-721166303549@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-47d39@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-47d39@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:andradeovictor@gmail.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]}]},"updateMask":"bindings"}
+[debug] [2024-09-09T01:12:13.065Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:setIamPolicy 200
+[debug] [2024-09-09T01:12:13.065Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/simposio-a97e5:setIamPolicy {"version":1,"etag":"BwYhpXJw8Lk=","bindings":[{"role":"roles/cloudfunctions.developer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/firebase.managementServiceAgent","members":["serviceAccount:firebase-service-account@firebase-sa-management.iam.gserviceaccount.com","serviceAccount:service-721166303549@gcp-sa-firebase.iam.gserviceaccount.com"]},{"role":"roles/firebase.sdkAdminServiceAgent","members":["serviceAccount:firebase-adminsdk-47d39@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/firebaseauth.admin","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/firebasehosting.admin","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/iam.serviceAccountTokenCreator","members":["serviceAccount:firebase-adminsdk-47d39@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/owner","members":["user:andradeovictor@gmail.com"]},{"role":"roles/run.viewer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.apiKeysViewer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]},{"role":"roles/serviceusage.serviceUsageConsumer","members":["serviceAccount:github-action-850459327@simposio-a97e5.iam.gserviceaccount.com"]}]}
+[debug] [2024-09-09T01:12:13.065Z] >>> [apiv2][query] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com/keys [none]
+[debug] [2024-09-09T01:12:13.065Z] >>> [apiv2][body] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com/keys {"keyAlgorithm":"KEY_ALG_UNSPECIFIED","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE"}
+[debug] [2024-09-09T01:12:13.555Z] <<< [apiv2][status] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com/keys 200
+[debug] [2024-09-09T01:12:13.555Z] <<< [apiv2][body] POST https://iam.googleapis.com/v1/projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com/keys {"name":"projects/simposio-a97e5/serviceAccounts/github-action-850459327@simposio-a97e5.iam.gserviceaccount.com/keys/c046ae8bd2b2b8ad25f324a73b1bcd48643154b6","privateKeyType":"TYPE_GOOGLE_CREDENTIALS_FILE","privateKeyData":"ewogICJ0eXBlIjogInNlcnZpY2VfYWNjb3VudCIsCiAgInByb2plY3RfaWQiOiAic2ltcG9zaW8tYTk3ZTUiLAogICJwcml2YXRlX2tleV9pZCI6ICJjMDQ2YWU4YmQyYjJiOGFkMjVmMzI0YTczYjFiY2Q0ODY0MzE1NGI2IiwKICAicHJpdmF0ZV9rZXkiOiAiLS0tLS1CRUdJTiBQUklWQVRFIEtFWS0tLS0tXG5NSUlFdndJQkFEQU5CZ2txaGtpRzl3MEJBUUVGQUFTQ0JLa3dnZ1NsQWdFQUFvSUJBUUNVOEpkRko5YmNjWXYvXG5iWjE1Q21XcDdSbUZieHo0RmJLT0hDT1poYlZmSytyUFQ0WjVPdWlKQlJRSytURzN2VzhHQlAybFJDWDFYVEU0XG5NV3YvODdGYklYTHZ3NmJ1T1d0MGFVdTdRWWxHbkN1TklucW5ZeUNZdXRpcGhUaHg5a0dCaTcwM2N5K0NNc0ZMXG5MNW56bTRONHdvTytBK2pFT3JhMHRVQmFqdEZrRld6c1hvNGE5Sm5BZ0tpYS91S0NLWktqYVRFUGN5bGVuVXVKXG5WS1RtSGZjWUtYRTdTYjZIdy9jMkdXN296eDllTjNNZWhVaHQ4R0dETUg4NnUyWlFWLzNJdCsrSm1FZTRNOTIyXG5xYllZMmk2TTlCN2IyRGg4bGR0dFkxc3BKYUE4SUdiRnA4M0N3UFp6aERxR1BxZFRTbnQvQ0N3SVJ2V2cvYzUrXG5kdEJPS3A0M0FnTUJBQUVDZ2dFQUVqc1k2UmdsVHJwL1huYTJiZGg5OVR6V2dPVEc4UDhHNmlvN21WRXFrRW01XG41a0pmdlhzZWQ1Y3RpdUpSMmFIUWN6WXRMZ3VYY2Q5RVpSSjNtODdpaUxzaGJJUFFiUnlPTUtPcTUzTHdNTHB4XG5Ba2VVSitVVVdsMlVvN3R3MjFJL1ZuSWFhUzBxUlkrYzVXMGdOUmQyRWxRTStEZFdTSjYvT29OdEt5aU1MT25hXG5tWWZRTFVVbXdvMUlCTE8vZExhTXNHbnFmR1liL3krZGx4NkpDZzIyaWRSK08zUnZYU256N3dJMVV5emUvbXU5XG5mS0NEckp4MWJOYVZhUU95VllKMzRCWEVuTHF3NmxKRDgzcGtKNmRGbkxBdnRlb3RhZ2dxSzFiOUlPL1JWWWNmXG51aEI2bEhCaEo0WGo2TXU0djlNK20zVnJZUDUrK3ZpQlJ0STFFR0R1VVFLQmdRRE9NK09icHp6ZjZ0U09PaU81XG5zd3VBSFYxVTlXTlpUWW5YMGU4ck9nU1hueGxpL2hPTTEwdXFudGY3aCsraEtBejIycjl0akd6QzhTb0RrcEtIXG5NS2VtNVB2RGNjdTl2VHRBWWt1blBKSVFoL3dUa2loK2RZc0tzcXJJbE9tb09NODU2YzFCOEFUbTRSU1AxVzlYXG5Mait0QzJpcGxYTkdaS0k0T3pVL3hUQzZ2UUtCZ1FDNDZJYmtQNWd5RnVaSzh3V0lxS0dSNHZTWlZOTTdEeHdiXG5mTTB2WEowV2VPYnpYdVBGUTZ2RlFKUFdZODE5Tm9hRjlFKzB6andpaEo4MUJCaHM5NVRaeHFSNG1rZEk2VEMxXG5KTzlWazVxYUdIRWJQYUNPejhpZmVRSTJDVEcvakpiRWlCd0NjWkFwblpKNEhxbmMxQXlVYWFwbGxqQ015WjRsXG40Nm5iZ3BnR0F3S0JnUUMrZzlTc3NKU2U4ZkhYUXNKVlJhYS9oT0lCcUFOVnREMUNhUlhINDMvd3NxK2E5ZE1NXG5VckwzZm5GaFZaUkNXcVczd2g0UjBpZCs2YUQrMGdLTjQ1ZFNyTWdzS015c2p0VGF4TGJQV2pnK0M5WU1Jd05FXG42OGMrYUJ0QTNjMFFmd1IvcHBQZGN5eWtRSnRsMVRaYzN6ODMyNDJrK1k4Ykg4bDltTDYzSDdMSkpRS0JnUUN3XG5BeWZrUFdUeXlUbU9QcWNWM3U5dG4weVdhRmhwNzRnaDRqcXV5c245aWpqTmtaWGZRUHRSV0pkaGpMOGVZYmpMXG42ak8xT0Z1bHYvaU16c2t4Y0xzUVVqWmRWdjVrT1JWVVdVUTVnYmU0MTJ0VE11YVRDdGMrZGtIVWpndjgraWJLXG5EWVljRFYzZFAxRWRacExxMGk3blYyNE1KVnN4cVBvUnR4VUpEdGNIWVFLQmdRQ1o3SzA1TnZkQnIyYW9uWWJwXG5kUFcreit0eVEvSXFxWElvU1BCYUlsSjZud3VmZDZIcS9KN0F4dGxEcExHV3ptajkxSkU5YUVVVjJOTVN4c0JVXG5kdUZ6M3B5V3BnMkZZVEROeFVXZHA0RVRBSnFQMm1oa21DWXlNYWZmYmRMNFpuajc3SGtUWHpvdjNwTnpNejkzXG5VT2NNaitrQkNCNCtqbVR0WXJaR094c2R3Zz09XG4tLS0tLUVORCBQUklWQVRFIEtFWS0tLS0tXG4iLAogICJjbGllbnRfZW1haWwiOiAiZ2l0aHViLWFjdGlvbi04NTA0NTkzMjdAc2ltcG9zaW8tYTk3ZTUuaWFtLmdzZXJ2aWNlYWNjb3VudC5jb20iLAogICJjbGllbnRfaWQiOiAiMTE3MDYzNDQ4ODg2NDc4MDAxNDIxIiwKICAiYXV0aF91cmkiOiAiaHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGgiLAogICJ0b2tlbl91cmkiOiAiaHR0cHM6Ly9vYXV0aDIuZ29vZ2xlYXBpcy5jb20vdG9rZW4iLAogICJhdXRoX3Byb3ZpZGVyX3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vb2F1dGgyL3YxL2NlcnRzIiwKICAiY2xpZW50X3g1MDlfY2VydF91cmwiOiAiaHR0cHM6Ly93d3cuZ29vZ2xlYXBpcy5jb20vcm9ib3QvdjEvbWV0YWRhdGEveDUwOS9naXRodWItYWN0aW9uLTg1MDQ1OTMyNyU0MHNpbXBvc2lvLWE5N2U1LmlhbS5nc2VydmljZWFjY291bnQuY29tIiwKICAidW5pdmVyc2VfZG9tYWluIjogImdvb2dsZWFwaXMuY29tIgp9Cg==","validAfterTime":"2024-09-09T01:12:13Z","validBeforeTime":"9999-12-31T23:59:59Z","keyAlgorithm":"KEY_ALG_RSA_2048","keyOrigin":"GOOGLE_PROVIDED","keyType":"USER_MANAGED"}
+[info] 
+[info] +  Created service account github-action-850459327 with Firebase Hosting admin permissions. 
+[debug] [2024-09-09T01:12:13.558Z] >>> [apiv2][query] PUT https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SIMPOSIO_A97E5 [none]
+[debug] [2024-09-09T01:12:13.558Z] >>> [apiv2][body] PUT https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SIMPOSIO_A97E5 {"encrypted_value":"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","key_id":"3380204578043523366"}
+[debug] [2024-09-09T01:12:13.929Z] <<< [apiv2][status] PUT https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SIMPOSIO_A97E5 201
+[debug] [2024-09-09T01:12:13.929Z] <<< [apiv2][body] PUT https://api.github.com/repos/Victor-AndradeZ/site-Simposio/actions/secrets/FIREBASE_SERVICE_ACCOUNT_SIMPOSIO_A97E5 {}
+[info] +  Uploaded service account JSON to GitHub as secret FIREBASE_SERVICE_ACCOUNT_SIMPOSIO_A97E5. 
+[info] i  You can manage your secrets at https://github.com/Victor-AndradeZ/site-Simposio/settings/secrets. 
+[info] 
