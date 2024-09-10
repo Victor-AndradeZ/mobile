@@ -1,4 +1,4 @@
-import Vue from 'vue'
+git import Vue from 'vue'
 import App from './App.vue'
 import vuetify from './plugins/vuetify'
 
