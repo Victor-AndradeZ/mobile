@@ -66,7 +66,7 @@
   style="align-items: center;">
 
 <v-btn 
-style="background-color: #9f3949;
+style="background-color:#b25f83;
 margin-top: 10%;
 margin-left: 15%;
 width: 300px;
@@ -74,12 +74,12 @@ height: 100px;
 border-radius: 50px;
 color: aliceblue;
 font-size: 40;"
-href="https://doity.com.br/i-simposio-multiprofissional-em-saude-da-mulher-unifbv-wyden"  target="_blank">
+href=" https://doity.com.br/tabela-de-valores"  target="_blank">
 
-<h1>Simpósio</h1>
+<h1>tabela</h1>
 </v-btn>
 <v-btn 
-style="background-color: #9f3949;
+style="background-color: #b25f83;
 margin-top: 10%;
 margin-left: 15%;
 width: 300px;

@@ -1,0 +1,13 @@
+<template>
+  <v-btn @click="adicionarFuncionalidade">Novo Botão</v-btn>
+</template>
+
+<script>
+export default {
+  methods: {
+    adicionarFuncionalidade() {
+      // Adiciona a nova funcionalidade sem mudar a lógica existente
+    }
+  }
+}
+</script>

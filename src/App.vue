@@ -6,7 +6,9 @@
         <div style="padding-bottom: 220px;">
         <v-app-bar
           absolute
-          color="#9f3949"
+          color="#b25f83
+
+"
           
           shrink-on-scroll
           prominent
@@ -32,7 +34,7 @@
           <v-app-bar-nav-icon></v-app-bar-nav-icon>
   
           <v-toolbar-title
-          style="color: aliceblue;"> I Simpósio multiprofissional em Saúde da Mulher - UNIFBV WYDEN”</v-toolbar-title>
+          style="color: aliceblue;">Plena mente</v-toolbar-title>
   
           <v-spacer></v-spacer>
   
@@ -73,14 +75,13 @@
   
           <template v-slot:extension>
             <v-tabs align-with-title>
-              <v-tab @click="selecionarArray('Quinta')"
-              style="color: aliceblue;" >Quinta</v-tab>
+              
   
              <v-tab @click="selecionarArray('Sexta')"
-             style="color: aliceblue;" >Sexta</v-tab>
+             style="color: aliceblue;" >psicóloga</v-tab>
   
               <v-tab @click="selecionarArray('Minicursos ')" 
-              style="color: aliceblue;">Minicursos </v-tab>
+              style="color: aliceblue;">fonoaudióloga </v-tab>
 
               <v-tab @click="selecionarArray('submissão de trabalho')"
               style="color: aliceblue;" >submissão de trabalho</v-tab>
@@ -93,11 +94,11 @@
         </v-app-bar>
         
         <CreateCard v-if="showSquareCreate" @fechar="fecharCard" 
-        @CursoBCriado="PushArrayQuinta" @CursoTCriado="PushArraysexta" @CursoLCriado="PushArrayMinicursos "
+        @CursoBCriado="PushArraypsicólogo" @CursoTCriado="PushArraysexta" @CursoLCriado="PushArrayMinicursos "
    />
   
-    <DeleteCard v-if="showSquareDelete" @fechar="fecharCard" :Quinta="Quinta" :Sexta="Sexta" :Minicursos: ="submissãodetrabalhos"/>
-    <EditCard v-if="showSquareEdit"     @fechar="fecharCard" :Quinta="Quinta" :Sexta="Sexta" :Minicursos: ="submissãodetrabalhos"/>
+    <DeleteCard v-if="showSquareDelete" @fechar="fecharCard" :psicólogo="psicólogo" :Sexta="Sexta" :Minicursos: ="submissãodetrabalhos"/>
+    <EditCard v-if="showSquareEdit"     @fechar="fecharCard" :psicólogo="psicólogo" :Sexta="Sexta" :Minicursos: ="submissãodetrabalhos"/>
       </div>     
       <CursoCard :arrayEscolhido="arrayEscolhido"/>
         <v-sheet
@@ -124,7 +125,9 @@
         class="indigo lighten-1 white--text text-center"
       >
         <v-card-text 
-        style="background-color: #9f3949;">
+        style="background-color: #b25f83
+
+;">
         
         
          
@@ -133,7 +136,7 @@
       
       <v-btn
         icon
-        href="https://www.instagram.com/laesmfbv?igsh=ODhoMDU2cWI5ZGdo"
+        href="https://www.instagram.com/danisouzapsi22/"
         target="_blank"
         rel="noopener"
       >
@@ -158,16 +161,15 @@
   
         
           <v-card-text class="white--text pt-0"
-          style="background-color: #9f3949;">O Simpósio Multiprofissional em Saúde da Mulher é um evento de extrema relevância para a promoção da saúde feminina e para o avanço das práticas de cuidado. Esse tipo de simpósio reúne profissionais de diversas áreas da saúde para discutir e compartilhar conhecimentos sobre temas específicos relacionados à saúde da mulher. Sua importância é multifacetada e impacta positivamente tanto os profissionais da saúde quanto as mulheres que recebem os cuidados.
+          style="background-color: #b25f83
 
-Primeiramente, a abordagem multiprofissional permite uma visão mais holística da saúde da mulher. Ao integrar especialistas em áreas como ginecologia, obstetrícia, endocrinologia, psicologia, nutrição, e fisioterapia, entre outras, o simpósio promove uma compreensão mais abrangente das necessidades e desafios enfrentados pelas mulheres em diferentes fases da vida. Essa integração ajuda a identificar e abordar questões de forma mais completa e eficaz, desde a prevenção até o tratamento.
-        </v-card-text>
+;">O bem-estar físico e mental são pilares fundamentais para uma vida saudável e equilibrada. Ambos os aspectos estão profundamente interligados e influenciam diretamente a qualidade de vida de uma pessoa. Cuidar do corpo e da mente não é apenas uma questão estética ou de desempenho, mas uma necessidade para garantir uma vida plena e saudável, com capacidade para lidar com os desafios do dia a dia.  </v-card-text>
         
   
         
   
         <v-card-text class="white--text"
-        style="background-color: #9f3949;">
+        style="background-color: #b25f83;">
           {{ new Date().getFullYear() }} —  <strong></strong>
         </v-card-text>
       </v-card>
@@ -193,210 +195,120 @@ Primeiramente, a abordagem multiprofissional permite uma visão mais holística 
         showSquareDelete: false,
         showSquareCreate: false,
         showSquareEdit: false,
-        Quinta: [
        
-          {
-            name: " Túlio Alves",
-            subtitulo:"Políticas Públicas para a Popula-ção Vulnuerável.",
-            sobre: "Enfermeiro pela UFPE - CAV .Especialista em Saúde da Família em de Formato de Residência - IMIP e Mestre em Políticas Públicas - UFPE.",
-            tempo: "10",
-            valor: "650",
-            delete: false,
-            tipo: 'Quinta',
-            pera: require("@/assets/download.png"),
-           
-         
-            
-          },
-          {
-            name: "Marx donelas",
-            subtitulo:"Crosstraining na gestação.",
-            sobre: "Bacharel Edução Física . Bacharel Fisioterapia . Pós graduado em Bases Fisiológicas do Treinamento e nutrição esportiva. Pós graduado em Psicomotricidade . Pós graduando em Fisiologia humana aplicada as Ciências da saúde . Docente dos Cursos de Fisioterapia e Educação Física da UniFBV Wyden Recife . CFSC L1. CrossFit L1.Atlétich Lab Performance L1. Kettlebell Sports.  ",
-            tempo: "10",
-            valor: "700",
-            delete: false,
-            tipo: 'Quinta',
-            pera: require("@/assets/Marx donelas.jpg"),
-           
-          },
-          {
-            name: "Nádia Oliveira",
-            subtitulo:"",
-            sobre: "Psicóloga, especialista em Psicologia Humanista na Abordagem Centrda na Pessoa (UniFafire),mestra e doutora em Psicologia Cognitiva pela UFPE.Linha de estudos: supervisão e formação profissional de psicólogos.",
-            tempo: "10",
-            valor: "400",
-            delete: false,
-            tipo: 'Quinta',
-            pera: require("@/assets/Nadia.jpg"),
-            
-          },
-          {
-            name: "Sérgio pessoa ",
-            subtitulo:"Os direitos à saúde de pessoas t-rans",
-            sobre: "Advogado e Professor Universitário . Conselheiro da Ordem dos Advogados do Brasil . Presidente da Comissão de Diversidade Sexual e de Gênero . Ativistas de pautas LGBT e Direitos Humanos. ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/sergio.jpg"),
-          },
-         
-          {
-            name: "TEREZA NOGUEIRA",
-            subtitulo:"Violência Psicológica",
-            sobre: "Delegada de Polícia da Mulher de PE . Mestranda em Perícias Forenses (Linha de Pesquisa Violência) e Especialista em Direito Público. Há 9 anos dedica-se, com afinco, ao Combate à Violência contra os mais Vulneráveis (Mulheres, Meninas, Adolescentes e Idosos). é  voluntária do Grupo Mulheres do Brasil, Núcleo Recife-PE, e apaixonada por Transformação Social e Cultura de Paz. É palestrante e propulsora de mulheres, já tendo sido distinguida com diversas premiações e homenagens.",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/TEREZA.jpg"),
-          },
-          {
-            name: "Mozart Amorim",
-            subtitulo:"Violência doméstica",
-            sobre: "Explicaçao sobre a palestra",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/Mozart Amorim.jpg"),
-          },
-          
-          
-                                           
-        ],
         Sexta: [
           {
-            name: "Andressa Tavares",
-            subtitulo:"Intervenções nutricionais e suplementação em mulheres com SOP",
-            sobre: "Nutricionista pela Universidade Federal de Pernambuco (UFPE).Mestra em Nutrição pela Universidade Federal de Pernambuco (UFPE). Pós-graduanda em Nutrição Clínica Funcional e Fitoterápicos (CCE).Atuante em consultório desde 2020.",
+            name: "Danielle Souza",
+            subtitulo:"psicóloga e psicopedagoga",
+            sobre: "psicologa pela Universidade Federal de Pernambuco (UFPE).Mestra em psicólogia pela Universidade Federal de Pernambuco (UFPE).",
             tempo: "8",
             valor: "450",
             delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/andressa.jpg"),
+            tipo: 'psicólogo',
+            pera: require("@/assets/dani.jpeg"),
             
           },
           {
-            name: "Thayna Praia",
-            subtitulo:"Atuação da fisioterapia pélvica na saúde da mulher",
-            sobre: "Explicaçao sobre a palestra",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/Thayna Praia novo.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
           
        
          
           {
-            name: "Renata rosal",
-            subtitulo:"O Papel da Vigilância Epidemiológica na Promoção e Prevenção das ISTS",
-            sobre: "Explicaçao sobre a palestra",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/renata.jpg"),
-          },
-          {
-            name: "Joana Nunes",
-            subtitulo:"Práticas integrativas na assistência ao parto",
-            sobre: "Explicaçao sobre a palestra",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/fbvtitular.png"),
+            pera: require("@/assets/plena mente.jpeg"),
+            
           },
          
-          
             
           ],
         
           Minicursos:  [
           {
-            name: " Mariana faustino",
-            subtitulo:"Simulação de HPP",
-            sobre: "Enfermeira pela UFPEm . Especialista em Enfermagem . Obstétrica pelo programa de residência da prefeitura Municipal do Recife. ",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/Mariana Faustino.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
           {
-            name: "Enf. Jonas Gê ",
-            subtitulo:"Primeiros socorros",
-            sobre: "Bacharel em Enfermagem . Pós Graduando em MBA em Gestão e Administração Hospitalar e UTI - Unidade de Terapia Intensiva . Formado em BLS na AHA e pela UFRN . Preceptor em Enfermagem - UNIFBV Wyden . Servidor Público Estadual da UPE - Universidade de Pernambuco . Servidor Público Estadual da UPE - Universidade de Pernambuco . Atuante na Emergência do Hospital - PROCAPE . Coordenador da LAUREM - Liga de Urgência e Emergência UNIFBV.",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/Jonas.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
           {
-            name: " Ana Caroline Novaes ",
-            subtitulo:"Interpretação de exames laborat-oriais",
-            sobre: "Enfermeira formada pela Universidade de Pernambuco - UPE - FENSG 2002.2.Especialista em  Saúde Pública . Enfermeira especialista em hematologia e hemoterapia . Enfermeira Mestre em Saúde Materno Infantil . Enfermeira de Saúde da Família Prefeitura da cidade de Recife . Professora de pós graduações nas áreas de oncologia . hematologia e saúde pública . Preceptora de alunos da graduação e residência da Universidade de Pernambuco . Tutora da Residência multidisciplinar da Prefeitura da Cidade do Recife . Conselheira do Conselho Regional de Enfermagem de Pernambuco - COREN/PE . Coordenadora da Câmara Técnica da Atenção Básica  do COREN/ PE. ",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/ana.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
-          {
-            name: " Joana D’arc ",
-            subtitulo:"Testagem rápida para IST’s da teoria a prática",
-            sobre: "Enfermeira - UFPE . Especialista em Saúde da Família - IMIP/PE . Especialista em Saúde da Mulher - FAVENI . Mestranda em Saúde Coletiva - PPGSC/UFPE . Docente de Enfermagem - UNIFBV WYDEN. ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/joana dark.jpg"),
-            
-          },
-          {
-            name: " Patrícia Alves ",
-            subtitulo:"Flebotomia",
-            sobre: "Biomédica formada pela UNiFBV . Pós-graduada em Biomédica estética . Mestra em engenharia Biomédica UFPE . Técnica em Análises Clínicas .Técnica em Radiologia .Flebotomista .Atualmente Gerente  da Usf - unidade de saúde da família . Gestora da escola de Saúde Brasil. ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/patricia.jpg"),
-            
-          },
+         
           
         ],
         submissaodetrabalho:[
         {
-            name: " . ",
-            subtitulo:"",
-            sobre: " ",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/fbvtitular.png"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
           {
-            name: " . ",
-            subtitulo:"",
-            sobre: " ",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/fbvtitular.png"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
+          {
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
+            tempo: "8",
+            valor: "450",
+            delete: false,
+            tipo: 'sexta',
+            pera: require("@/assets/plena mente.jpeg"),
+            
+          },
+          
 
 
         ],
@@ -404,83 +316,44 @@ Primeiramente, a abordagem multiprofissional permite uma visão mais holística 
        
         
           
-          {
-            name: " Manuella Alves ",
-            subtitulo:"",
-            sobre: " ",
+        {
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/manu.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
           {
-            name: "Escola de saude",
-            subtitulo:"",
-            sobre: " ",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/escola.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
           {
-            name: " Cl saude",
-            subtitulo:"",
-            sobre: " ",
+            name: "..",
+            subtitulo:"...",
+            sobre: "curriculo",
             tempo: "8",
             valor: "450",
             delete: false,
             tipo: 'sexta',
-            pera: require("@/assets/cl.jpg"),
+            pera: require("@/assets/plena mente.jpeg"),
             
           },
-          {
-            name: " COBRAS DO SUS ",
-            subtitulo:"",
-            sobre: " ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/cobras.jpg"),
-            
-          },
-          {
-            name: " manda o nome ae",
-            subtitulo:"",
-            sobre: " ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/imagem.jpg"),
-            
-          },
-          {
-            name: "Amanda Santana",
-            subtitulo:"",
-            sobre: " ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/amandadoce.jpg"),
-            
-          },
-          {
-            name: "Marx donelas",
-            subtitulo:"",
-            sobre: " ",
-            tempo: "8",
-            valor: "450",
-            delete: false,
-            tipo: 'sexta',
-            pera: require("@/assets/dornelaspatrocionio.jpg"),
-            
-          },
+          
+                 
+        
+         
+         
          
 
 
